@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resana</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body dir="ltr">
+    
+    <div class="navbar">
+        <a href="#"><b>sounds</b></a>
+        <a href="#"><b>train</b></a>
+    </div>
+    <hr>
+
+    <div class="part1">
+        <button class="button button1">Upload a file</button>
+        <button class="button button2">Record now</button>
+    </div>
+
+    <div class="check-box">
+        <input type="checkbox" id="time" name="times" value="time">
+        <label for="times"> Automatically stop recoding after <input type="number" id="seconds" name="seconds" value="0"
+                min="0" max="99" step="1">
+            seconds.
+        </label>
+    </div>
+    <hr>
+ 
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+        <span id="titr-class">Class</span><br><br><br>
+        <form action="/action_page.php">
+          <label id="titr-box-class" for="class">Name</label><br><br>
+          <input id="input-name-class" type="text" id="className" name="cname"><br><br><br><br>
+          <input id="save-class" type="submit" value="Save">
+          <input id="dismiss-class" type="submit" value="Dismiss">
+        </form> 
+        </div>
+      </div>
+
+
+    <div class="row">
+        <div class="part2">
+            <span>
+                <b>Class Type</b>
+            </span>
+           <button onclick="openNav()" class="button button3" >Add Class</button>
+            <br><br>
+            <input type="checkbox" name="check" value="check">
+            <label for="check">All</label>
+            <input type="text" placeholder="search-text">
+            <br><br>
+            <input type="checkbox" name="check" value="check">
+            <label for="check">sadkjl</label>
+            <br><br>
+            <input type="checkbox" name="check" value="check">
+            <label for="check">C1</label>
+        </div>
+
+        <div class="part3">
+            <div class="part3-line1">
+                <span class="head"><b>Name</b></span>
+                <span class="head"><b>Class Type</b></span>
+                <span class="head"><b>Date</b></span>
+                <span class="head"><b>More</b></span>
+            </div>
+            <div class="part3-line2">
+                <div class="play-sound">
+                    <span id="name"><b>sadjfh</b></span>
+                    <span id="seconds"><b>00:10</b></span>
+                    <i class="fa fa-play-circle" style="font-size:36px;color:#ff7a00"></i>
+                </div>
+                <div class="choose-class">
+                    <select name="class-type" id="Class-Type">
+                        <option value="C1">C1</option>
+                        <option value="C2">C2</option>
+                        <option value="C3">C3</option>
+                    </select>
+                </div>
+                <p id="date-time"></p>
+            </div>
+            <div class="part3-line3">
+                <div class="play-sound">
+                    <span id="name"><b>adsA</b></span>
+                    <span id="seconds"><b>00:10</b></span>
+                    <i class="fa fa-play-circle" style="font-size:36px;color:#ff7a00"></i>
+                </div>
+                <div class="choose-class">
+                    <select name="class-type" id="Class-Type">
+                        <option value="C1">C1</option>
+                        <option value="C2">C2</option>
+                        <option value="C3">C3</option>
+                    </select>
+                </div>
+                <p id="date-time2"></p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+
+<script>
+    var dt = new Date();
+    document.getElementById('date-time').innerHTML = dt;
+
+    var dt2 = new Date();
+    document.getElementById('date-time2').innerHTML = dt2;
+</script>

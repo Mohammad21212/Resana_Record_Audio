@@ -1,0 +1,264 @@
+.navbar {
+    overflow: hidden;
+}
+
+.body {
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    float: left;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #999aa0;
+    padding: 14px 20px;
+    margin-top: 0%;
+    display: flex;
+}
+
+.navbar a:hover {
+    color: black;
+    background-color: #fcf2eb;
+    text-decoration-color: #ff7a00;
+    text-decoration-line: underline;
+}
+
+.part1 {
+    border: 2px solid #ff7a00;
+    border-radius: 5px;
+    padding: 100px 800px;
+    margin-left: 20px;
+    margin-right: 20PX;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f7f8f8;
+}
+
+.button1 {
+    border: 2px solid #ff7a00;
+    border-radius: 5px;
+    background-color: white;
+    color: #ff7a00;
+    padding: 5px 10px;
+}
+
+.button1:hover {
+    border: 2px solid #111010;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: #0c0c0c;
+    padding: 5px 10px;
+}
+
+.button2 {
+    border: 2px solid #ff7a00;
+    border-radius: 5px;
+    background-color: #ff7a00;
+    color: white;
+    padding: 5px 10px;
+
+}
+
+.check-box {
+    color: #ed717b;
+}
+
+#seconds {
+    width: 35px;
+    border: 1px solid #4c4a47
+}
+
+.row {
+    display: flex;
+}
+
+.part2 {
+    flex-direction: 40%;
+    width: 500px;
+    height: 300px;
+    border: 2px solid #f7f8f8;
+    background-color: #f7f8f8;
+    padding: 15px;
+}
+
+.button3 {
+    margin-left: 320px;
+    width: 85px;
+    height: 30px;
+    border: 2px solid #ff7a00;
+    border-radius: 5px;
+    background-color: white;
+    color: #ff7a00;
+    padding: 5px 10px;
+}
+
+.button3:hover {
+    border: 2px solid #111010;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: #0c0c0c;
+    padding: 5px 10px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    height: 180px;
+    width: 15%;
+    text-align: left;
+    margin: 340px 740px;
+    padding: 30px;
+    background-color: #f1f1f1;
+  }
+  
+  #titr-class {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size: large;
+  }
+  
+  #titr-box-class {
+    font-size: medium;
+  }
+  
+  #input-name-class {
+    width: 270px;
+    border: 2px solid rgb(62, 6, 167);
+    border-radius: 4px;
+    background-color: #f8f8f8;
+  }
+  
+  #save-class {
+    border: 2px solid #ff7a00;
+    border-radius: 5px;
+    background-color: #ff7a00;
+    color: white;
+    padding: 5px 10px;
+  }
+  
+  #dismiss-class {
+    border: 2px solid #e6e0db;
+    border-radius: 5px;
+    background-color: #fffbf8;
+    color: rgb(8, 8, 8);
+    padding: 5px 10px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {
+      overflow-y: auto;
+    }
+  
+    .overlay a {
+      font-size: 20px
+    }
+  
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+.part2 input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-right: 20px;
+    font-size: 12px;
+    width: 370px;
+}
+
+.part3 {
+    flex:60%
+}
+
+.part3-line1 {
+    background-color: #f7f8f8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:20px ;
+}
+
+.head {
+    margin: 10px;
+    width: 219px;
+    height: 25px;
+    color: #4c4a47;
+}
+
+.part3-line2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.play-sound {
+    margin-left: 20px;
+    background-color: #f7f8f8;
+    padding: 10px;
+    height: 120px;
+    height: 70px;
+    width: 220px;
+}
+
+
+#seconds {
+    border: none;
+    margin-left: 115px;
+}
+
+.fa-play-circle {
+    margin-top: 10px;
+}
+
+.choose-class {
+    padding: 25px;
+}
+
+#Class-Type {
+    width: 200px;
+    background-color: #e9e9ed;
+}
+
+.part3-line3 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////*
